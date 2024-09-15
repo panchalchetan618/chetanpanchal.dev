@@ -22,7 +22,7 @@ const Portfolio = () => {
                         }}
                     >
                         {/* Content wrapper, initially hidden and shows on hover */}
-                        <div className="absolute inset-0 opacity-0 hover:opacity-100 transition-opacity duration-300">
+                        <div className="absolute inset-0 opacity-100 hover:opacity-50 transition-opacity duration-300">
                             <div className="bg-gray-950/75 w-full h-full flex flex-col justify-between items-start p-3">
                                 <div className="flex justify-between items-center w-full">
                                     <h3 className={headings.h3}>
