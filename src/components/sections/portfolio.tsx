@@ -5,6 +5,7 @@ import { projects } from "../constants";
 import { headings } from "../styles";
 import { motion } from "framer-motion";
 import { containerVariants, childVariants, fadeVariants } from "../animations";
+import { Project } from "../interfaces";
 
 const Portfolio = () => {
     return (
@@ -24,7 +25,7 @@ const Portfolio = () => {
                 Portfolio
             </motion.h2>
             <div className="flex flex-wrap justify-center items-start gap-12">
-                {projects.map((project: any) => (
+                {projects.map((project: Project) => (
                     <Link
                         key={project.id}
                         href={project.web}
@@ -35,7 +36,6 @@ const Portfolio = () => {
                             backgroundPosition: "center",
                         }}
                     >
-                        {/* Content wrapper, initially hidden and shows on hover */}
                         <motion.div
                             className="absolute inset-0 opacity-100 hover:opacity-50 transition-opacity duration-300"
                             variants={fadeVariants}

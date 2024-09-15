@@ -1,4 +1,6 @@
-export const skills = [
+import { Project, Skill } from "./interfaces";
+
+export const skills: Skill[] = [
     {
         id: 1,
         name: "NextJS",
@@ -101,7 +103,7 @@ export const skills = [
     },
 ];
 
-export const projects = [
+export const projects: Project[] = [
     {
         id: 1,
         name: "Portfolio Website",

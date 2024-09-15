@@ -4,6 +4,7 @@ import { skills } from "../constants";
 import { buttons, headings } from "../styles";
 import { motion } from "framer-motion";
 import { containerVariants, childVariants, fadeVariants } from "../animations";
+import { Skill } from "../interfaces";
 
 const Skills = () => {
     return (
@@ -22,10 +23,8 @@ const Skills = () => {
             >
                 Skills
             </motion.h2>
-            <div
-                className="flex flex-wrap justify-center items-center gap-4"
-            >
-                {skills.map((skill: any) => (
+            <div className="flex flex-wrap justify-center items-center gap-4">
+                {skills.map((skill: Skill) => (
                     <motion.div
                         key={skill.id}
                         className={

@@ -22,9 +22,9 @@ const About = () => {
             >
                 <h2 className={headings.h2}>About me</h2>
                 <p className={text.normal}>
-                    Hey, I'm{" "}
+                    Hey, I&apos;m{" "}
                     <span className={text.highlighted}>Chetan Panchal</span>{" "}
-                    <br /> I'm a{" "}
+                    <br /> I&apos;m a{" "}
                     <span className={text.highlighted}>
                         Full Stack Developer & UI/UX Designer with extensive
                         industry-level experience in designing and developing
@@ -38,8 +38,8 @@ const About = () => {
                         functionality, and performance.
                     </span>
                     <br />
-                    Whether it's building a robust web platform or crafting
-                    intuitive interfaces, I'm{" "}
+                    Whether it&apos;s building a robust web platform or crafting
+                    intuitive interfaces, I&apos;m{" "}
                     <span className={text.highlighted}>
                         passionate about delivering exceptional results that
                         balance both aesthetics and efficiency.

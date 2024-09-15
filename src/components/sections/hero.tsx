@@ -21,7 +21,7 @@ const Hero = () => {
                 variants={childVariants}
             >
                 <span className="text-gray-500">
-                    Hello <WavingHand />, I'm{" "}
+                    Hello <WavingHand />, I&apos;m{" "}
                 </span>
                 Chetan
             </motion.h2>

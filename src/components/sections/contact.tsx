@@ -93,9 +93,9 @@ const Contact = () => {
             <div className="min-w-[200px] w-full max-w-[400px] flex flex-col justify-center items-start gap-5">
                 <h2 className={headings.h2}>Contact</h2>
                 <p className={text.normal}>
-                    Let's Work together,
+                    Let&apos;s Work together,
                     <br />
-                    There're multiple ways to connect with me.
+                    There&apos;re multiple ways to connect with me.
                 </p>
                 <Link
                     href="/"
@@ -136,7 +136,7 @@ const Contact = () => {
                     <h3 className={`${headings.h3} text-center`}>
                         Thank you for reaching out.
                         <br />
-                        I'll get back to you soon.
+                        I&apos;ll get back to you soon.
                     </h3>
                 </div>
             ) : (
