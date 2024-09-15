@@ -2,8 +2,6 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import { Poppins } from "next/font/google";
 import "./globals.css";
-import Navigation from "@/components/sections/navigation";
-
 
 const geistSans = localFont({
     src: "./fonts/GeistVF.woff",
@@ -38,10 +36,7 @@ export default function RootLayout({
             <body
                 className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} antialiased bg-gray-950 text-gray-400 px-2`}
             >
-                <>
-                    <Navigation />
-                    {children}
-                </>
+                {children}
             </body>
         </html>
     );

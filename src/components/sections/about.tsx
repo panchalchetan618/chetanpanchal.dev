@@ -1,13 +1,25 @@
+"use client";
+
 import { headings, text } from "../styles";
 import Image from "next/image";
+import { motion } from "framer-motion";
+import { containerVariants, childVariants } from "../animations";
 
 const About = () => {
     return (
-        <section
+        <motion.section
             id="about"
             className="w-full flex justify-center items-center gap-10 flex-wrap my-20"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.1 }}
+            variants={containerVariants}
         >
-            <div className="max-w-[480px] flex flex-col justify-center items-start gap-5">
+            <motion.div
+                className="max-w-[480px] flex flex-col justify-center items-center gap-5"
+                variants={childVariants}
+                viewport={{ once: true, amount: 0.1 }}
+            >
                 <h2 className={headings.h2}>About me</h2>
                 <p className={text.normal}>
                     Hey, I'm{" "}
@@ -33,8 +45,13 @@ const About = () => {
                         balance both aesthetics and efficiency.
                     </span>
                 </p>
-            </div>
-            <div className="relative w-[400px] h-[400px]">
+            </motion.div>
+
+            <motion.div
+                className="relative w-[400px] h-[400px]"
+                variants={childVariants}
+                viewport={{ once: true, amount: 0.3 }}
+            >
                 <Image
                     src="/assets/images/about-section/bg-1.png"
                     alt="Background Image 1"
@@ -56,8 +73,8 @@ const About = () => {
                     height={250}
                     className="absolute right-0 bottom-0 h-[250px] w-[250px]"
                 />
-            </div>
-        </section>
+            </motion.div>
+        </motion.section>
     );
 };
 
