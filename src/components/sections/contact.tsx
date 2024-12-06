@@ -98,20 +98,20 @@ const Contact = () => {
                     There&apos;re multiple ways to connect with me.
                 </p>
                 <Link
-                    href="/"
+                    href="https://instagram.com/chetanpanchal.dev"
                     className={`${links.primary} flex items-center gap-2`}
                 >
                     <LuInstagram />
                     <span>Instagram</span>
                 </Link>
                 <Link
-                    href="/"
+                    href="mailto:panchalchetan315@gmail.com"
                     className={`${links.primary} flex items-center gap-2`}
                 >
                     <MdAlternateEmail />
                     <span>Email</span>
                 </Link>
-                <Link
+                {/* <Link
                     href="/"
                     className={`${links.primary} flex items-center gap-2`}
                 >
@@ -124,7 +124,7 @@ const Contact = () => {
                 >
                     <FiLinkedin />
                     <span>LinkedIn</span>
-                </Link>
+                </Link> */}
             </div>
             {sending ? (
                 <div className="min-w-[200px] max-w-[400px] w-full flex flex-col justify-center items-center">
