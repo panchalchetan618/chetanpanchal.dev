@@ -1,9 +1,11 @@
 "use client";
 
-import { headings, text } from "../styles";
+import { buttons, headings, text } from "../styles";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { containerVariants, childVariants } from "../animations";
+import Link from "next/link";
+import { FaArrowRightLong } from "react-icons/fa6";
 
 const About = () => {
     return (
@@ -20,35 +22,39 @@ const About = () => {
                 variants={childVariants}
                 viewport={{ once: true, amount: 0.1 }}
             >
-                <h2 className={headings.h2}>About me</h2>
+                <h2 className={headings.h2}>About</h2>
                 <p className={text.normal}>
-                    Hey, I&apos;m{" "}
-                    <span className={text.highlighted}>Chetan Panchal</span>{" "}
-                    <br /> I&apos;m a{" "}
+                    Hey, I&apos;m Chetan,{" "}
                     <span className={text.highlighted}>
-                        Full Stack Developer & UI/UX Designer with extensive
-                        industry-level experience in designing and developing
-                        high-performance websites & mobile applications.
-                    </span>
-                    <br />
-                    My expertise lies in{" "}
+                        Full Stack Developer
+                    </span>{" "}
+                    & <span className={text.highlighted}>UI/UX Designer</span>{" "}
+                    specializing in{" "}
                     <span className={text.highlighted}>
-                        creating seamless, production-ready digital solutions
-                        with a strong emphasis on user experience,
-                        functionality, and performance.
-                    </span>
-                    <br />
-                    Whether it&apos;s building a robust web platform or crafting
-                    intuitive interfaces, I&apos;m{" "}
+                        high-performance websites
+                    </span>{" "}
+                    and{" "}
                     <span className={text.highlighted}>
-                        passionate about delivering exceptional results that
-                        balance both aesthetics and efficiency.
+                        mobile applications
                     </span>
+                    . Expert in creating seamless,{" "}
+                    <span className={text.highlighted}>
+                        production-ready digital solutions
+                    </span>{" "}
+                    with a focus on user{" "}
+                    <span className={text.highlighted}>experience</span>,{" "}
+                    <span className={text.highlighted}>functionality</span>, and{" "}
+                    <span className={text.highlighted}>performance</span>.
+                </p>
+                <p className="w-full">
+                    <Link href="#contact" className={`${buttons.primary} flex items-center gap-2 hover:gap-4 transition-all duration-200 w-fit`}>
+                        <span>Hire me</span> <FaArrowRightLong />
+                    </Link>
                 </p>
             </motion.div>
 
             <motion.div
-                className="relative w-[400px] h-[400px]"
+                className="relative w-[320px] h-[320px]"
                 variants={childVariants}
                 viewport={{ once: true, amount: 0.3 }}
             >
@@ -57,21 +63,21 @@ const About = () => {
                     alt="Background Image 1"
                     width={250}
                     height={250}
-                    className="absolute top-0 left-0 h-[250px] w-[250px]"
+                    className="absolute top-0 left-0 h-[200px] w-[200px]"
                 />
                 <Image
-                    src="/assets/images/about-section/Chetan-Panchal.png"
+                    src="/assets/images/about-section/Chetan-Panchal.jpg"
                     alt="Background Image 2"
                     width={250}
                     height={250}
-                    className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] h-[250px] w-[250px] z-[1]"
+                    className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] h-[250px] w-[250px] z-[1] rounded-full"
                 />
                 <Image
                     src="/assets/images/about-section/bg-2.png"
                     alt="Chetan Panchal"
                     width={250}
                     height={250}
-                    className="absolute right-0 bottom-0 h-[250px] w-[250px]"
+                    className="absolute right-0 bottom-0 h-[200px] w-[200px]"
                 />
             </motion.div>
         </motion.section>

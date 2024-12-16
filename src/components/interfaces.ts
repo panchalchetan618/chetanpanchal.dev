@@ -1,15 +1,19 @@
 export interface Project {
     id: number;
     name: string;
-    description: string;
     image: string;
     web: string;
-    difficulty: string;
     skills: string[];
 }
 
+export interface Services {
+    id: number;
+    title: string;
+    description: string;
+}
+
 export interface Skill {
-    id: number,
-    name: string,
-    highlight: boolean,
+    id: number;
+    name: string;
+    highlight: boolean;
 }

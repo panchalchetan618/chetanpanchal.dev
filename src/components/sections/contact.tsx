@@ -3,8 +3,8 @@ import React, { useState } from "react";
 import { buttons, headings, inputs, links, text } from "../styles";
 import { LuInstagram } from "react-icons/lu";
 import { MdAlternateEmail } from "react-icons/md";
-// import { FaGithub } from "react-icons/fa";
-// import { FiLinkedin } from "react-icons/fi";
+import { FaGithub } from "react-icons/fa";
+import { FiLinkedin } from "react-icons/fi";
 import { IoCloudDoneOutline } from "react-icons/io5";
 import { FaSpinner } from "react-icons/fa";
 import Link from "next/link";
@@ -111,20 +111,20 @@ const Contact = () => {
                     <MdAlternateEmail />
                     <span>Email</span>
                 </Link>
-                {/* <Link
-                    href="/"
+                <Link
+                    href="https://github.com/panchalchetan618"
                     className={`${links.primary} flex items-center gap-2`}
                 >
                     <FaGithub />
                     <span>GitHub</span>
                 </Link>
                 <Link
-                    href="/"
+                    href="https://linkedin.com/in/panchalchetan618"
                     className={`${links.primary} flex items-center gap-2`}
                 >
                     <FiLinkedin />
                     <span>LinkedIn</span>
-                </Link> */}
+                </Link>
             </div>
             {sending ? (
                 <div className="min-w-[200px] max-w-[400px] w-full flex flex-col justify-center items-center">

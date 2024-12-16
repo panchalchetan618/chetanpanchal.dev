@@ -1,4 +1,4 @@
-import { Project, Skill } from "./interfaces";
+import { Project, Services, Skill } from "./interfaces";
 
 export const skills: Skill[] = [
     {
@@ -103,32 +103,54 @@ export const skills: Skill[] = [
     },
 ];
 
-export const projects: Project[] = [
+export const services: Services[] = [
     {
         id: 1,
-        name: "Portfolio Website",
-        web: "",
-        image: "https://th.bing.com/th?id=OIP.99KSahoHTXzrxRqA2g4KVwHaFj&w=288&h=216&c=8&rs=1&qlt=90&r=0&o=6&dpr=1.3&pid=3.1&rm=2",
-        description: "Hellom orld this is my project with owl",
-        skills: ["Django", "Next.js", "Shadcn UI", "PostgreSQL", "AWS"],
-        difficulty: "hard",
+        title: "UI/UX Design",
+        description:
+            "Crafting intuitive and visually stunning user experiences that keep your users engaged and delighted.",
     },
     {
         id: 2,
-        name: "Portfolio Website",
-        web: "",
-        image: "/assets/images/projects/bg-2.png",
-        description: "Hellom orld this is my project with owl",
-        skills: ["Nextjs", "Shadcn", "Redux", "AWS"],
-        difficulty: "easy",
+        title: "Graphics Design",
+        description:
+            "Bringing your brand to life with creative visuals, logos, and marketing assets that captivate audiences.",
     },
     {
         id: 3,
-        name: "Portfolio Website",
-        web: "",
-        image: "/assets/images/projects/bg-2.png",
-        description: "Hellom orld this is my project with owl",
-        skills: ["Nextjs", "Shadcn", "Redux", "AWS"],
-        difficulty: "mid",
+        title: "Web Application Development",
+        description:
+            "Developing secure, scalable, and high-performing web platforms tailored to your business needs.",
+    },
+    {
+        id: 4,
+        title: "Mobile Application Development",
+        description:
+            "Delivering seamless, feature-rich mobile experiences across iOS and Android to connect with users on the go.",
+    },
+];
+
+const baseUrl = "/assets/images/projects/";
+export const projects: Project[] = [
+    {
+        id: 1,
+        name: "Community App",
+        web: "https://devflow-js.vercel.app",
+        image: baseUrl + "devflow.png",
+        skills: ["Next.js", "Typescript", "Shadcn UI", "Clerk", "Vercel"],
+    },
+    {
+        id: 2,
+        name: "Portfolio - Video Editing",
+        web: "https://avinashsaini.vercel.app",
+        image: baseUrl + "portfolio-videoediting.png",
+        skills: ["Next.js", "Typescript", "Vercel", "AWS"],
+    },
+    {
+        id: 3,
+        name: "Ecommerce - Dentist tools",
+        web: "https://webcoders.site",
+        image: baseUrl + "dentalduct.png",
+        skills: ["Next.js", "Typescript", "Figma", "AWS"],
     },
 ];
