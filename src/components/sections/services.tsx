@@ -6,7 +6,7 @@ import { servicesData } from "../constants";
 import ServiceCard from "../ui/service-card";
 
 const ServicesSection = () => {
-    const cards = servicesData.map((service, index) => (
+    const cards = servicesData.map((service) => (
         <Card 
             key={service.title} 
             card={{
@@ -15,7 +15,6 @@ const ServicesSection = () => {
                 content: <ServiceCard {...service} />,
                 src: service.imageSrc
             }} 
-            index={index} 
         />
     ));
 
