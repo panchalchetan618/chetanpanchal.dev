@@ -1,71 +1,65 @@
 "use client";
 
+import Image from "next/image";
+import React from "react";
+import { CardBody, CardContainer, CardItem } from "../ui/3d-card";
 import Link from "next/link";
-import { projects } from "../constants";
+import { projects } from "@/components/constants";
 import { headings } from "../styles";
-import { motion } from "framer-motion";
-import { containerVariants, childVariants, fadeVariants } from "../animations";
-import { Project } from "../interfaces";
 
-const Portfolio = () => {
+export default function Portfolio() {
     return (
-        <motion.section
-            id="portfolio"
-            className="mx-auto my-20 flex flex-col justify-center items-center gap-10"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.1 }}
-            variants={containerVariants}
-        >
-            <motion.h2
-                className={headings.h2}
-                variants={childVariants}
-                viewport={{ once: true, amount: 0.1 }}
-            >
-                Portfolio
-            </motion.h2>
-            <div className="flex flex-wrap justify-center items-start gap-8 w-full">
-                {projects.map((project: Project) => (
-                    <Link
-                        key={project.id}
-                        href={project.web}
-                        className="relative max-w-[300px] min-w-[175px] w-full aspect-square overflow-hidden"
-                        style={{
-                            backgroundImage: `url('${project.image}')`,
-                            backgroundSize: "cover",
-                            backgroundPosition: "center",
-                        }}
-                    >
-                        <motion.div
-                            className="absolute inset-0 opacity-100 hover:opacity-50 transition-opacity duration-300"
-                            variants={fadeVariants}
-                            viewport={{ once: true, amount: 0.1 }}
-                        >
-                            <div className="bg-gray-950/75 w-full h-full flex flex-col justify-between items-start p-3">
-                                <div className="flex justify-between items-center w-full">
-                                    <h3 className={headings.h3}>
-                                        {project.name}
-                                    </h3>
-                                </div>
-                                <div>
-                                    <p className="flex justify-start items-center gap-1 flex-wrap">
-                                        {project.skills.map((skill: string) => (
-                                            <span
-                                                key={skill}
-                                                className="px-2 py-1 rounded-full bg-black/25 text-gray-300 text-xs capitalize border border-gray-600"
-                                            >
-                                                {skill}
-                                            </span>
-                                        ))}
-                                    </p>
-                                </div>
+        <section id="portfolio" className="px-4 py-10 max-w-[1280px] mx-auto">
+            <h2 className={`${headings.h2} text-center mb-8`}>Portfolio</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 place-items-center">
+                {projects.map((project) => (
+                    <CardContainer key={project.id} className="inter-var">
+                        <CardBody className="relative group/card hover:shadow-2xl hover:shadow-emerald-500/[0.1] bg-transparent border-white/[0.2] w-full max-w-sm h-auto rounded-xl p-6 border">
+                            <CardItem
+                                translateZ="50"
+                                className="text-xl font-bold text-white"
+                            >
+                                {project.name}
+                            </CardItem>
+                            <CardItem
+                                as="p"
+                                translateZ="60"
+                                className="text-sm max-w-sm mt-2 text-neutral-300"
+                            >
+                                {project.skills.join(", ")}
+                            </CardItem>
+                            <CardItem translateZ="100" className="w-full mt-4">
+                                <Image
+                                    src={project.image}
+                                    height={1080}
+                                    width={1080}
+                                    className="h-auto w-full object-cover rounded-xl group-hover/card:shadow-xl"
+                                    alt={project.name}
+                                />
+                            </CardItem>
+                            <div className="flex flex-wrap gap-3 justify-between items-center mt-6">
+                                <CardItem
+                                    translateZ={20}
+                                    as={Link}
+                                    href={project.web}
+                                    target="__blank"
+                                    className="px-4 py-2 rounded-xl text-xs font-normal text-white hover:text-zinc-300 transition"
+                                >
+                                    View Project →
+                                </CardItem>
+                                <CardItem
+                                    translateZ={20}
+                                    as={Link}
+                                    href="#contact"
+                                    className="px-4 py-2 rounded-xl text-xs font-normal hover:text-white border border-white hover:bg-transparent bg-white text-black transition"
+                                >
+                                    Hire me
+                                </CardItem>
                             </div>
-                        </motion.div>
-                    </Link>
+                        </CardBody>
+                    </CardContainer>
                 ))}
             </div>
-        </motion.section>
+        </section>
     );
-};
-
-export default Portfolio;
+}
