@@ -1,4 +1,4 @@
-import { Project, Services, Skill } from "./interfaces";
+import { Project, Skill } from "./interfaces";
 
 export const skills: Skill[] = [
     {
