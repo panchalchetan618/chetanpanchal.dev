@@ -6,6 +6,7 @@ import { GoArrowDown } from "react-icons/go";
 import WavingHand from "../ui/waving-hand";
 import { motion } from "framer-motion";
 import { containerVariants, childVariants } from "../animations";
+import { Spotlight } from "@/components/ui/spotlight-new";
 
 const Hero = () => {
     return (
@@ -16,6 +17,7 @@ const Hero = () => {
             animate="visible"
             variants={containerVariants}
         >
+            <Spotlight />
             <motion.h2
                 className={`${headings.h2} absolute top-10 mx-auto`}
                 variants={childVariants}
