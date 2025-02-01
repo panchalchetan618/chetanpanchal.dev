@@ -24,7 +24,15 @@ export default function RootLayout({
             <body
                 className={`${poppins.variable} antialiased bg-gray-950 text-gray-400 px-2`}
             >
-                {children}
+                <main className="relative overflow-hidden min-h-[100dvh] antialiased px-2 max-w-[1660px] mx-auto">
+                    {/* Circle 1 */}
+                    <div className="fixed top-[-10%] left-[-10%] bg-indigo-500/30 blur-[50px] opacity-50 h-[400px] w-[400px] rounded-full z-[-1]"></div>
+                    {/* Circle 2 */}
+                    <div className="fixed bottom-[-10%] right-[-10%] bg-indigo-500/30 blur-[50px] opacity-50 h-[400px] w-[400px] rounded-full z-[-1]"></div>
+
+                    {/* Children */}
+                    {children}
+                </main>
             </body>
         </html>
     );

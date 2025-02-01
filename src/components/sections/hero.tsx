@@ -26,10 +26,10 @@ const Hero = () => {
                 Chetan
             </motion.h2>
             <motion.h1 className={headings.h1} variants={childVariants}>
-                <span className="text-gray-400">Full Stack</span> Developer
+                <span className="text-gray-400">Full Stack</span> <span className="glow-text">Developer</span>
             </motion.h1>
             <motion.h1 className={headings.h1} variants={childVariants}>
-                <span className="text-gray-400">UI/UX</span> Designer
+                <span className="text-gray-400">UI/UX</span> <span className="glow-text">Designer</span>
             </motion.h1>
             <motion.div
                 className="mt-5 flex justify-between items-center gap-5"

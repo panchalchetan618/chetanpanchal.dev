@@ -149,7 +149,7 @@ export const projects: Project[] = [
     {
         id: 3,
         name: "Ecommerce - Dentist tools",
-        web: "https://webcoders.site",
+        web: "https://dentalduct.com",
         image: baseUrl + "dentalduct.png",
         skills: ["Next.js", "Typescript", "Figma", "AWS"],
     },
