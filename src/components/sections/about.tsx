@@ -11,7 +11,7 @@ const About = () => {
     return (
         <motion.section
             id="about"
-            className="w-full flex justify-center items-center gap-10 flex-wrap my-20"
+            className="w-full flex justify-center items-center gap-10 flex-wrap my-20 px-2"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.1 }}

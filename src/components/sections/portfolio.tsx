@@ -14,7 +14,7 @@ export default function Portfolio() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 place-items-center">
                 {projects.map((project) => (
                     <CardContainer key={project.id} className="inter-var">
-                        <CardBody className="relative group/card hover:shadow-2xl hover:shadow-emerald-500/[0.1] bg-transparent border-white/[0.2] w-full max-w-sm h-auto rounded-xl p-6 border">
+                        <CardBody className="relative group/card hover:shadow-2xl hover:shadow-gray-300/[0.1] bg-transparent border-white/[0.2] w-full max-w-sm h-auto rounded-xl p-6 border">
                             <CardItem
                                 translateZ="50"
                                 className="text-xl font-bold text-white"
@@ -24,7 +24,7 @@ export default function Portfolio() {
                             <CardItem
                                 as="p"
                                 translateZ="60"
-                                className="text-sm max-w-sm mt-2 text-neutral-300"
+                                className="text-sm max-w-sm mt-2 text-gray-300"
                             >
                                 {project.skills.join(", ")}
                             </CardItem>

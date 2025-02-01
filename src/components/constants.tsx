@@ -103,30 +103,27 @@ export const skills: Skill[] = [
     },
 ];
 
-export const services: Services[] = [
+export const servicesData = [
     {
-        id: 1,
-        title: "UI/UX Design",
+        category: "Web Development",
+        title: "Build modern web applications",
         description:
-            "Crafting intuitive and visually stunning user experiences that keep your users engaged and delighted.",
+            "Scalable, high-performance websites and web apps. We build responsive, fast, and secure applications that meet industry standards.",
+        imageSrc: "/assets/images/services/web-development.webp",
     },
     {
-        id: 2,
-        title: "Graphics Design",
+        category: "Mobile Apps",
+        title: "Create stunning mobile experiences",
         description:
-            "Bringing your brand to life with creative visuals, logos, and marketing assets that captivate audiences.",
+            "We design and develop cross-platform and native mobile applications that provide a seamless user experience across all devices.",
+        imageSrc: "/assets/images/services/mobile-development.webp",
     },
     {
-        id: 3,
-        title: "Web Application Development",
+        category: "UI/UX Design",
+        title: "Design seamless and beautiful interfaces",
         description:
-            "Developing secure, scalable, and high-performing web platforms tailored to your business needs.",
-    },
-    {
-        id: 4,
-        title: "Mobile Application Development",
-        description:
-            "Delivering seamless, feature-rich mobile experiences across iOS and Android to connect with users on the go.",
+            "Creating user-friendly and visually appealing interfaces that improve customer engagement and usability.",
+        imageSrc: "/assets/images/services/ui-ux.webp",
     },
 ];
 

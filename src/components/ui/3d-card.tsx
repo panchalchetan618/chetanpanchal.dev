@@ -117,12 +117,11 @@ export const CardItem = ({
     rotateX?: number | string;
     rotateY?: number | string;
     rotateZ?: number | string;
-    [key: string]: unknown; // ✅ Fixes "Unexpected any" error
+    [key: string]: unknown;
 }) => {
     const ref = useRef<HTMLDivElement>(null);
     const [isMouseEntered] = useMouseEnter();
 
-    // ✅ Wrap handleAnimations in useCallback to prevent unnecessary re-renders
     const handleAnimations = useCallback(() => {
         if (!ref.current) return;
         if (isMouseEntered) {
@@ -138,11 +137,11 @@ export const CardItem = ({
         rotateX,
         rotateY,
         rotateZ,
-    ]); // ✅ Fixes dependency warning
+    ]);
 
     useEffect(() => {
         handleAnimations();
-    }, [handleAnimations]); // ✅ Only updates when dependencies change
+    }, [handleAnimations]);
 
     return (
         <Tag
@@ -158,7 +157,6 @@ export const CardItem = ({
     );
 };
 
-// Create a hook to use the context
 export const useMouseEnter = () => {
     const context = useContext(MouseEnterContext);
     if (context === undefined) {
