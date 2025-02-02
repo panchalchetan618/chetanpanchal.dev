@@ -14,7 +14,7 @@ export default function Portfolio() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 place-items-center">
                 {projects.map((project) => (
                     <CardContainer key={project.id} className="inter-var">
-                        <CardBody className="relative group/card hover:shadow-2xl hover:shadow-gray-300/[0.1] bg-transparent border-white/[0.2] w-full max-w-sm h-auto rounded-xl p-6 border">
+                        <CardBody className="relative group/card hover:shadow-2xl hover:shadow-slate-300/[0.1] bg-transparent border-white/[0.2] w-full max-w-sm h-auto rounded-xl p-6 border">
                             <CardItem
                                 translateZ="50"
                                 className="text-xl font-bold text-white"
@@ -24,7 +24,7 @@ export default function Portfolio() {
                             <CardItem
                                 as="p"
                                 translateZ="60"
-                                className="text-sm max-w-sm mt-2 text-gray-300"
+                                className="text-sm max-w-sm mt-2 text-slate-300"
                             >
                                 {project.skills.join(", ")}
                             </CardItem>
@@ -43,7 +43,7 @@ export default function Portfolio() {
                                     as={Link}
                                     href={project.web}
                                     target="__blank"
-                                    className="px-4 py-2 rounded-xl text-xs font-normal text-white hover:text-zinc-300 transition"
+                                    className="px-4 py-2 text-xs font-normal text-white hover:text-zinc-300 transition"
                                 >
                                     View Project →
                                 </CardItem>
@@ -51,7 +51,7 @@ export default function Portfolio() {
                                     translateZ={20}
                                     as={Link}
                                     href="#contact"
-                                    className="px-4 py-2 rounded-xl text-xs font-normal hover:text-white border border-white hover:bg-transparent bg-white text-black transition"
+                                    className="px-4 py-2 rounded-2xl text-xs font-normal hover:text-white border border-white hover:bg-transparent bg-white text-black transition"
                                 >
                                     Hire me
                                 </CardItem>

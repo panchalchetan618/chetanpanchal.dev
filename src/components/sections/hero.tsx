@@ -18,10 +18,10 @@ const Hero = () => {
         >
             <LampContainer>
                 <motion.h1 className={headings.h1} variants={childVariants}>
-                    <span className="text-gray-400">Full Stack</span> Developer
+                    <span className="text-slate-400">Full Stack</span> Developer
                 </motion.h1>
                 <motion.h1 className={headings.h1} variants={childVariants}>
-                    <span className="text-gray-400">UI/UX</span> Designer
+                    <span className="text-slate-400">UI/UX</span> Designer
                 </motion.h1>
                 <motion.div
                     className="mt-5 flex justify-between items-center gap-5"
@@ -37,7 +37,7 @@ const Hero = () => {
             </LampContainer>
             <Link
                 href="#about"
-                className="absolute bottom-10 mx-auto border-2 border-gray-400 rounded-full text-3xl px-1 py-2 text-gray-100 hover:border-gray-100 hover:bg-gray-100 hover:text-gray-700 transition-all duration-200"
+                className="absolute bottom-10 mx-auto border-2 border-slate-400 rounded-full text-3xl px-1 py-2 text-slate-100 hover:border-slate-100 hover:bg-slate-100 hover:text-slate-700 transition-all duration-200"
             >
                 <GoArrowDown />
             </Link>
