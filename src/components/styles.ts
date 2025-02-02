@@ -4,7 +4,7 @@ export const text = {
 };
 
 export const headings = {
-    h1: "text-4xl font-medium text-gray-100 md:text-6xl lg:text-9xl",
+    h1: "text-4xl font-medium text-gray-100 md:text-6xl lg:text-7xl",
     h2: "font-medium text-gray-100 text-4xl lg:text-7xl",
     h3: "text-lg font-medium text-gray-100 md:text-xl",
 };
