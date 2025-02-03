@@ -104,7 +104,7 @@ export const LampContainer = ({
                         opacity: 1,
                         width:
                             width! < 600
-                                ? "15rem"
+                                ? "12rem"
                                 : width! < 1080
                                 ? "20rem"
                                 : "30rem",

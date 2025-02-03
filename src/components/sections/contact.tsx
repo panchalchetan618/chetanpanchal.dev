@@ -16,7 +16,7 @@ const Contact = () => {
             viewport={{ once: true, amount: 0.1 }}
             variants={containerVariants}
             id="contact"
-            className="w-full flex justify-center items-center gap-10 flex-wrap my-20"
+            className="w-full flex justify-center items-center gap-10 flex-wrap my-20 p-4"
         >
             <div className="min-w-[200px] w-full max-w-[400px] flex flex-col justify-center items-start gap-5">
                 <motion.h2
