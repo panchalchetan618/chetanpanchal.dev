@@ -134,7 +134,7 @@ export const Card = ({
         }
 
         return () => window.removeEventListener("keydown", onKeyDown);
-    }, [open, handleClose]); // ✅ `handleClose` added to dependencies
+    }, [open, handleClose]);
 
     return (
         <>

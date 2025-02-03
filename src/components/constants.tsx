@@ -129,21 +129,21 @@ export const servicesData = [
 
 export const testimonials = [
     {
-        quote: "The attention to detail and innovative features have completely transformed our workflow. This is exactly what we've been looking for.",
+        quote: "The portfolio design turned out even better than I expected, and the pricing was reasonable too. Really happy with the work, and I'd definitely recommend Chetan to anyone looking for a great website.",
         name: "Avinash Saini",
         designation: "Video Editor - Freelancer",
         src: "https://avinashsaini.vercel.app/_next/image?url=%2Fimages%2Fprofile.jpg&w=1920&q=75",
     },
     {
-        quote: "Implementation was seamless and the results exceeded our expectations. The platform's flexibility is remarkable.",
+        quote: "We needed a website for our agency, and I had a rough idea of what I wanted. Chetan took that idea and turned it into exactly what we needed. The process was smooth, and the end result speaks for itself.",
         name: "Deepanshu Kumar",
-        designation: "Co-Founder of Hawk Studioz",
+        designation: "Co-Founder at Hawk Studioz",
         src: "/assets/images/testimonials/hawk-studioz.webp",
     },
     {
-        quote: "This solution has significantly improved our team's productivity. The intuitive interface makes complex tasks simple.",
+        quote: "I had a tight budget, but Chetan still managed to build a clean, well-performing e-commerce site for me. It does exactly what I need, and I'm really glad I went with his service.",
         name: "Rajesh Rai",
-        designation: "Founder of Dental Duct",
+        designation: "Founder at Dental Duct",
         src: "/assets/images/testimonials/dentalduct.webp",
     },
 ];
