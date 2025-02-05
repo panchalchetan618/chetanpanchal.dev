@@ -41,21 +41,21 @@ const Contact = () => {
                     className="flex flex-col justify-center items-start gap-5"
                 >
                     <Link
-                        href="https://instagram.com/chetanpanchal.dev"
+                        href="https://instagram.com/chetancodes"
                         className={`${links.primary} flex items-center gap-2`}
                     >
                         <LuInstagram />
                         <span>Instagram</span>
                     </Link>
                     <Link
-                        href="mailto:panchalchetan315@gmail.com"
+                        href="mailto:chetancodes.tech@gmail.com"
                         className={`${links.primary} flex items-center gap-2`}
                     >
                         <MdAlternateEmail />
                         <span>Email</span>
                     </Link>
                     <Link
-                        href="https://linkedin.com/in/panchalchetan618"
+                        href="https://linkedin.com/in/chetancodes"
                         className={`${links.primary} flex items-center gap-2`}
                     >
                         <FiLinkedin />

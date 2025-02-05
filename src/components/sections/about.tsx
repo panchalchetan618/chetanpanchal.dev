@@ -59,21 +59,21 @@ const About = () => {
                 viewport={{ once: true, amount: 0.3 }}
             >
                 <Image
-                    src="/assets/images/about-section/bg-1.png"
+                    src="/assets/images/about-section/bg-1.webp"
                     alt="Background Image 1"
                     width={250}
                     height={250}
                     className="absolute top-0 left-0 h-[200px] w-[200px]"
                 />
                 <Image
-                    src="/assets/images/about-section/Chetan-Panchal.jpg"
+                    src="/assets/images/about-section/Chetan-Panchal.webp"
                     alt="Background Image 2"
                     width={250}
                     height={250}
                     className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] h-[250px] w-[250px] z-[1] rounded-full"
                 />
                 <Image
-                    src="/assets/images/about-section/bg-2.png"
+                    src="/assets/images/about-section/bg-2.webp"
                     alt="Chetan Panchal"
                     width={250}
                     height={250}
